@@ -1,0 +1,65 @@
+@import './fonts.css';
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+html,
+body {
+ 
+  direction: rtl;
+  padding: 0;
+  margin: 0;
+  font-family: IRANSans , -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 14px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  
+  box-sizing: border-box;
+}
+
+.cs-shadow{
+  box-shadow: 1px 1px 1px #e5e5e5;
+}
+.relative{
+  position: relative;
+}
+
+input{
+  border-radius: 5px;
+  padding:7.5px;
+  font-family:IRANSans , -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; 
+  border: none ;
+  font-size: 12px ;
+  color: white;
+
+  &::placeholder{
+      color: #00000099;
+  }
+  &:focus{
+      outline: none;
+  }
+}
+.error{
+  color: red;
+  font-size: 11px;
+}
+.m-border{
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.home-container{
+  background-image: url('../../Artboard\ 1.png');
+  background-size: cover;
+  background-position: center;
+  max-height: 100vh;
+}
+.color-white{
+  color: white !important;
+}

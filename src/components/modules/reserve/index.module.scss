@@ -1,0 +1,54 @@
+$yellow:#FFE000;
+.input , .input_secondary{
+    border: 1px solid $yellow;
+    caret-color: $yellow;
+    text-align: right;
+    color: #00000099;
+    font-size: 12px;
+    width: 100%;
+}
+.color_black_active{
+    color: black;
+}
+.color_black_inactive{
+    color: rgb(219, 219, 219);
+}
+.input_secondary_inactive{
+    border: 1px solid rgb(244,244,244) !important;
+    color: rgb(219, 219, 219);
+    &::placeholder{
+        color: rgb(219, 219, 219);
+    }
+    &[type="number"]{
+        max-width: 120px;
+    }
+}
+
+.input_secondary_active{
+    border: 1px solid rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0);
+    &::placeholder{
+        color: rgb(0, 0, 0);
+    }
+    &[type="number"]{
+        max-width: 120px;
+    }
+}
+.otp_input{
+    margin: 1rem;
+    input{
+        direction: rtl;
+        border-bottom: 1px solid $yellow;
+        border-radius: 0;
+        font-size: 24px;
+        caret-color: $yellow;
+        padding: 0px !important;
+        color: #000000ef !important;
+    }
+}
+
+.bg_image_yazahra1{
+    background-image: url('../../../../public/images/reserve.jpg');
+    background-size: cover;
+    background-position: center;
+}

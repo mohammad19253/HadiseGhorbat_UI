@@ -1,0 +1,13 @@
+
+.top_users{
+    display: flex;
+    transition: all 0.3s;
+    padding: 15px 30px;
+ 
+    cursor: pointer;
+    border-bottom: 1px solid  #e5e5e5;
+    &:hover{
+        box-shadow: 0px 0px 6px #999999; 
+        border-radius: 5px;
+    }
+}

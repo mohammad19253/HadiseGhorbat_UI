@@ -1,0 +1,17 @@
+
+  .card {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s ease-out;
+    border: 1px solid #e5e5e5;;
+    .image_container{
+        img{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        width: 100%;
+        position: relative;
+    }
+  }

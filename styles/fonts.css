@@ -1,0 +1,22 @@
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url('./fonts/IRANSans.eot');
+  src: url('./fonts/IRANSans.woff2') format('woff2'),
+  url('./fonts/IRANSans.ttf') format('ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Kalameh;
+  font-style: normal;
+  font-weight: normal;
+  src:url('./fonts/Kalameh Bold.ttf') format('ttf');
+  font-display: swap;
+}
+
+
+
+

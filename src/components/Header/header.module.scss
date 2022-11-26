@@ -1,0 +1,27 @@
+.search{
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 15px;
+    padding:0px 7.5px;
+    display: flex;
+    align-items: center;
+    input{
+        background-color: transparent;
+        font-family:IRANSans , -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; 
+        border: none ;
+        font-size: 12px ;
+        caret-color:  rgb(206, 206, 206);
+        color:  rgb(0, 0, 0);
+        width: 300px;
+        &::placeholder{
+            color: rgb(206, 206, 206);
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+    svg{
+        fill:  rgb(192, 192, 192);
+        margin-left: 5px;
+    }
+  }
