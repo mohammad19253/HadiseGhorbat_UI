@@ -2,7 +2,8 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import { HYDRATE, createWrapper } from 'next-redux-wrapper'
 import userReducer from '../features/user'
 import stepperReducer from '../features/stepper'
-import  reserveReducer from '../features/reserve'
+import reserveReducer from '../features/reserve'
+import drawerReducer from '../features/drawer'
 // const persistConfig = {
 //   key: 'root',
 //   storage,
@@ -12,6 +13,7 @@ const reducers = combineReducers({
   user: userReducer,
   stepper:stepperReducer,
   reserve:reserveReducer,
+  drawer:drawerReducer,
 });
 
 const masterReducer = (state, action) => {

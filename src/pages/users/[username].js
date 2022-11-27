@@ -16,7 +16,7 @@ const Username = ( ) => {
     })
     return (
         <>
-            <Header />
+        
             <Box width={'100%'} height={'200px'} position={'relative'}>
                 <Image loading='lazy' src={'/images/blank.png'} layout='fill' alt={username}/>
                 <Avatar 

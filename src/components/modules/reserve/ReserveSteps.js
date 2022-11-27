@@ -38,10 +38,8 @@ export default function HorizontalLinearStepper( {steps_array}) {
           );
         })}
       </Stepper>
-
       <React.Fragment>
           {returnStep(step)}
-        
         </React.Fragment>
     </Box>
   );

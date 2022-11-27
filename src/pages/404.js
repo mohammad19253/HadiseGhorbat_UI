@@ -1,19 +1,17 @@
 import { Button, Typography, Container, } from '@mui/material'
 import React, { useEffect } from 'react'
 import Link from 'next/link'
-import Header from '../components/Header/Header'
-import Footer from '../components/Footer/Footer'
  const NotFound = () => {
   return (
     <>
-        <Header />
+      
         <Container  sx={{textAlign:'center',p:5}}>
         <Typography variant='h3'>صفحه ی موردنظر یافت نشد</Typography>
         <Button variant='contained' sx={{m:2}}>
             <Link  href={'/'}><a>خانه</a></Link>
         </Button>
         </Container>
-        <Footer />
+      
     </>
   )
 }
