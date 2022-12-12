@@ -1,7 +1,7 @@
-import Header from '../components/Header/Header'
-import Footer from '../components/Footer/Footer'
+import Header from '../shared/layout/Header/Header'
+import Footer from '../shared/layout/Footer/Footer'
 import '../../styles/globals.scss'
-import {   ThemeProvider } from '@mui/material'
+import { ThemeProvider } from '@mui/material'
 import theme from '../../styles/theme/theme'
 import {
   QueryClient,

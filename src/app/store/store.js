@@ -1,41 +1,21 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
-import { HYDRATE, createWrapper } from 'next-redux-wrapper'
+import { createWrapper } from 'next-redux-wrapper'
 import userReducer from '../features/user'
 import stepperReducer from '../features/stepper'
 import reserveReducer from '../features/reserve'
 import drawerReducer from '../features/drawer'
-// const persistConfig = {
-//   key: 'root',
-//   storage,
-// }
-// const persistedReducer = persistReducer(persistConfig, reducers)
+import modalReducer from '../features/modal'
 const reducers = combineReducers({
   user: userReducer,
   stepper:stepperReducer,
-  reserve:reserveReducer,
+  reserves:reserveReducer,
   drawer:drawerReducer,
+  modal:modalReducer,
 });
-
-const masterReducer = (state, action) => {
-  if (action.type === HYDRATE) {
-      const nextState = {
-          ...state, // use previous state
-          counter: {
-              count: state.counter.count + action.payload.counter.count,
-          },
-          users: {
-              users: [...action.payload.users.users, ...state.users.users]
-          }
-      }
-      return nextState;
-  } else {
-  return reducers(state, action)
-}
-}
 
 export const makeStore = () =>
 configureStore({
-  reducer: masterReducer,
+  reducer: reducers,
 });
 
 export const wrapper = createWrapper(makeStore);

@@ -1,8 +1,6 @@
 const nextConfig = {
   reactStrictMode: true,
-  images: {
-    domains: ["rickandmortyapi.com",'images.unsplash.com','picsum.photos']
-  }
+  images: {  }
 }
 
 module.exports = nextConfig

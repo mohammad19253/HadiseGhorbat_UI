@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { AdminPanelContainer } from '../../components/modules/admin-panel/AdminPanelContainer'
+import { AdminPanelContainer } from '../../modules/admin-panel/AdminPanelContainer'
 const AdminPanelPage=()=>{
     return  <AdminPanelContainer />
 }

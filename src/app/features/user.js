@@ -2,9 +2,10 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
   token: '',
-  phoneNumber:'',
-  firstName:'',
-  lastName:'',
+  otp_id:'',
+  phoneNumber:'09396380293',
+  firstName:'mohammad',
+  lastName:'mirzaei',
 }
 
 export const userReducer = createSlice({
@@ -13,6 +14,9 @@ export const userReducer = createSlice({
   reducers: {
     setToken: (state, action) => {
       state.token = action.payload
+    },
+    setOtpId: (state, action) => {
+      state.otp_id = action.payload
     },
     setPhoneNumber: (state, action) => {
       state.phoneNumber = action.payload
@@ -27,6 +31,6 @@ export const userReducer = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { setToken, setPhoneNumber, setFirstName, setLastName, } = userReducer.actions
+export const { setToken, setPhoneNumber, setFirstName, setLastName, setOtpId} = userReducer.actions
 
 export default userReducer.reducer
