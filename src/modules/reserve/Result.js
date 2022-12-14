@@ -1,6 +1,7 @@
 
 import React , { useState } from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 import { Grid, Box, Divider, } from '@mui/material'
 import styles from './index.module.scss'
 import { useSelector } from 'react-redux'
