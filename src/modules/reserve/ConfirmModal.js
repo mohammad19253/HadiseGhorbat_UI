@@ -46,12 +46,13 @@ export default function ConfirmModal() {
         if(res.data.status === 200 ){
           dispatch(setReservedDays(res.data.data))
           router.push({pathname:'/reserve/result'})
-          console.log('test2222')
+          dispatch(setStep(0))
+          handleClose()
         }
         // failed:
         else if(res.data.status === 210){
           handleClose()
-
+          dispatch(setStep(0))
         }
       
        
