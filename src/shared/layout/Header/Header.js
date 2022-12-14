@@ -7,9 +7,9 @@ import {
 } from '@mui/material';
 import { Search } from '@mui/icons-material';
 import { Menu as MenuIcon } from '@mui/icons-material';
-import styles from './Header.module.scss'
+import styles from './Header.module.scss';
 import Link from 'next/link';
-import CustomDrawer from '../../ui/organisms/CustomDrawer/Drawer'
+import CustomDrawer from '../../ui/organisms/CustomDrawer/Drawer';
 import { useDispatch } from 'react-redux';
 import { setOpenDrawer } from '../../../app/features/drawer';
 import { DRAWER_MD_VIEW_LIST, DRAWER_XS_VIEW_LIST } from './constants/headerConstants';
