@@ -5,7 +5,7 @@ import {Button, StepLabel, Step, Stepper, Box} from '@mui/material';
 
 import Form from './steps/Form';
 import Otp from './steps/Otp';
-import PhoneNumber from './steps/phoneNumber';
+import PhoneNumber from './steps/PhoneNumber';
 import SelectDays from './steps/SelectDays';
 import { setStep, setSteps } from '../../app/features/stepper';
 
