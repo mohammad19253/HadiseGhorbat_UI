@@ -1,5 +1,5 @@
 import * as React from 'react';
-import NextLink from 'next/link';
+import Link from 'next/link';
 import { useSelector, useDispatch } from 'react-redux';
 import { Box, Toolbar, Typography, Drawer, Button, } from '@mui/material';
 import { setOpenDrawer } from '../../../../app/features/drawer';
@@ -37,14 +37,14 @@ export default function CustomDrawer({
                 minWidth:'20vw'
                }}>
                 {mdViewList.map(({link, text, icon}) => (
-                   <NextLink   key={text}  href={link} >
+                   <Link key={text}  href={link} >
                    <a>
                      <Button sx={{ my:1, color: 'black', display: 'flex'}} onClick={toggleDrawer(false)}>
                        <Box mx={2}> {icon} </Box>
                        <Typography> {text} </Typography>
                      </Button>
                    </a>
-                  </NextLink  >
+                  </Link>
                 ))}
               </Box>
               <Box sx={{
@@ -56,16 +56,16 @@ export default function CustomDrawer({
                 minWidth:'53vw'
 
                 }}>
-                <Typography  variant='h2' onClick={toggleDrawer(false)}><NextLink href={'/'}><a>لوگو سایت </a></Link></Typography>
+                <Typography  variant='h2' onClick={toggleDrawer(false)}><Link href={'/'}><a>لوگو سایت </a></Link></Typography>
                 {xsViewList.map(({link, text, icon, }) => (
-                    <NextLink   key={text}  href={link} >
+                    <Link key={text}  href={link} >
                     <a>
                       <Button sx={{ my:1, color: 'black', display: 'flex'}} onClick={toggleDrawer(false)}>
                         <Box mx={2}> {icon} </Box>
                         <Typography> {text} </Typography>
                       </Button>
                     </a>
-                   </NextLink  >
+                   </Link>
                 ))}
               </Box>
           </Toolbar>

@@ -8,7 +8,7 @@ import Link from 'next/link'
         <Container  sx={{textAlign:'center',p:5}}>
         <Typography variant='h3'>صفحه ی موردنظر یافت نشد</Typography>
         <Button variant='contained' sx={{m:2}}>
-            <NextLink  href={'/'}><a>خانه</a></Link>
+            <Link href={'/'}><a>خانه</a></Link>
         </Button>
         </Container>
       

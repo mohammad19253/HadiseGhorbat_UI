@@ -26,7 +26,7 @@ export const Footer = (props) => {
                         <Button> <InstagramIcon /> </Button>
                         <Button> <TwitterIcon /> </Button>
                         <Button> <FacebookIcon /> </Button>
-                        <Button> <NextLinkedInIcon /> </Button>
+                        <Button> <LinkedInIcon /> </Button>
                    </Box>
                 </Grid>
             </Grid>
