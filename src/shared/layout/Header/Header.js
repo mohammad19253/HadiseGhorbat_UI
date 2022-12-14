@@ -8,7 +8,7 @@ import {
 import { Search } from '@mui/icons-material';
 import { Menu as MenuIcon } from '@mui/icons-material';
 import styles from './header.module.scss'
-import Link from 'next/link';
+import NextLink from 'next/link';
 import CustomDrawer from '../../ui/organisms/CustomDrawer/Drawer'
 import { useDispatch } from 'react-redux';
 import { setOpenDrawer } from '../../../app/features/drawer';
@@ -46,13 +46,13 @@ const Header = () => {
                   <MenuIcon  onClick={toggleDrawer(true)}></MenuIcon>
                </Button>
               {pages.map(({link,text}) => (
-                <Link   key={text}  href={link}>
+                <NextLink   key={text}  href={link}>
                   <a>
                     <Button sx={{ my: 2, color: 'black', display: 'block' }}>
                       {text} 
                     </Button>
                   </a>
-                  </Link>
+                 </NextLink  >
               ))}
           <CustomDrawer mdViewList={DRAWER_MD_VIEW_LIST} xsViewList={DRAWER_XS_VIEW_LIST}/>
           </Box>
@@ -63,7 +63,7 @@ const Header = () => {
               <Search />
               <input  type='text' placeholder='جست و جو' className='cs-input-search'/>
             </Box>
-          <Typography   variant='h2' sx={{display: { xs : 'none', md: 'flex' } }} ><Link href={'/'}><a>لوگو سایت </a></Link></Typography>
+          <Typography   variant='h2' sx={{display: { xs : 'none', md: 'flex' } }} ><NextLink href={'/'}><a>لوگو سایت </a></Link></Typography>
         </Toolbar>
       </Container>
     </AppBar>
