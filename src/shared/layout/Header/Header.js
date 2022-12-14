@@ -7,7 +7,7 @@ import {
 } from '@mui/material';
 import { Search } from '@mui/icons-material';
 import { Menu as MenuIcon } from '@mui/icons-material';
-import styles from './Header.module.scss';
+import styles from './header.module.scss';
 import Link from 'next/link';
 import CustomDrawer from '../../ui/organisms/CustomDrawer/Drawer';
 import { useDispatch } from 'react-redux';
