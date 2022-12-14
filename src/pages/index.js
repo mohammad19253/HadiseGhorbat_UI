@@ -3,7 +3,7 @@ import React from 'react'
 import Head from 'next/head'
 import { Typography, Box, Container, Button  } from '@mui/material'
 import Banner from '../shared/ui/organisms/Banner/Banner'
-import Link from 'next/Link'
+import Link from 'next/link'
 export default function Landing() {
   return (
     <>
