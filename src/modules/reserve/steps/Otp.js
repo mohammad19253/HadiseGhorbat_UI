@@ -7,7 +7,7 @@ import { useTimer } from 'react-timer-hook';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux'
 import { Box } from '@mui/material'
-import { setFirstName, setLastName, setToken } from '../../../app/features/user';
+import { setFirstName, setLastName, setId } from '../../../app/features/user';
 import { setStep } from '../../../app/features/stepper';
 import { BASE_URL } from '../../../constants/urls/urls';
 
@@ -45,6 +45,7 @@ import { BASE_URL } from '../../../constants/urls/urls';
          console.log('res.data.user.firstName',res.data.data.firstName)
          dispatch(setFirstName(res.data.data.firstName))
          dispatch(setLastName(res.data.data.lastName))
+         dispatch(setId(res.data.data.id))
          dispatch(setStep(step+1))
          setOtp({...otp,isSubmitting:true,message:''}) 
           

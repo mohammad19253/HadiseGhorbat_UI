@@ -2,7 +2,6 @@
 import React from 'react'
 import Head from 'next/head'
 import { Typography, Box, Container, Button  } from '@mui/material'
-import Banner from '../shared/ui/organisms/Banner/Banner'
 import Link from 'next/link'
 export default function Landing() {
   return (
@@ -26,9 +25,6 @@ export default function Landing() {
                 </Box>
               </Box>
             </Container>
-      </Container>
-      <Container sx={{p:'2rem' , textAlign:'right '}}   maxWidth="xl">
-        <Banner image=""  h1='این یک هدر است ' p='اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد '/>
       </Container>
      </>
 )

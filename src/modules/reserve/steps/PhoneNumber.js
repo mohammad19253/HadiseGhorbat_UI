@@ -42,6 +42,7 @@ const PhoneNumber = () => {
             console.log('otp',res.data.otp_id)
             dispatch(setOtpId(res.data.otp_id))
             dispatch(setPhoneNumber(values.phoneNumber))
+            
             dispatch(setStep(step+1))
           }
           

@@ -24,7 +24,7 @@ export default function ConfirmModal() {
     const router =useRouter()
     const { open } = useSelector(state=>state.modal)
     const { days } = useSelector(state=>state.reserves)
-    const { firstName,lastName, phoneNumber, token} = useSelector(state=>state.user)
+    const { firstName,lastName, phoneNumber, id, token,} = useSelector(state=>state.user)
     const [tempDays, setTempDays] = React.useState([]);
     const handleClose = () =>{ dispatch(setOpenModal(false));}
     const handleConfirm = () =>{
@@ -38,7 +38,8 @@ export default function ConfirmModal() {
           days:days, 
           firstName: firstName,
           lastName: lastName,
-          phoneNumber:phoneNumber
+          phoneNumber:phoneNumber,
+          id:id,
         }
       }).then(res=>{
         console.log(res)
