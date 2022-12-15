@@ -17,15 +17,6 @@ const pages = [
   {
     text:'رزرو صندلی',
     link:'/reserve',
-  },{
-    text:'فضائل',
-    link:'/فضائل',
-  },{
-    text:'اعلانات',
-    link:'/اعلانات',
-  },{
-    text:'تماس با ما',
-    link:'/تماس با ما',
   }
 ];
 
@@ -59,12 +50,7 @@ const Header = () => {
           <Box sx={{  display: { xs: 'flex', md: 'none' } }}>
               <MenuIcon  onClick={toggleDrawer(true)}></MenuIcon>
           </Box>
-          <Box className={styles.search}>
-              <Search />
-              <input  type='text' placeholder='جست و جو' className='cs-input-search'/>
-            </Box>
-          <Typography   variant='h2' sx={{display: { xs : 'none', md: 'flex' } }} ><Link href={'/'}><a>لوگو سایت </a></Link></Typography>
-        </Toolbar>
+          </Toolbar>
       </Container>
     </AppBar>
   );

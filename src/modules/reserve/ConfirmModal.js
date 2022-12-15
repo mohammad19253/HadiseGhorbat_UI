@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import {Box, Button, Typography, Modal, Grid, Divider } from '@mui/material';
 import { useSelector, useDispatch } from 'react-redux';
 import { setOpenModal } from '../../app/features/modal';
+import { setStep } from '../../app/features/stepper';
 import { setReservedDays } from '../../app/features/reserve';
 import { BASE_URL } from '../../constants/urls/urls';
 import axios from 'axios';
@@ -46,13 +47,13 @@ export default function ConfirmModal() {
         //success:
         if(res.data.status === 200 ){
           dispatch(setReservedDays(res.data.data))
-          router.push({pathname:'/reserve/result'})
           dispatch(setStep(0))
-          handleClose()
+          dispatch(setOpenModal(false))
+          router.push({pathname:'/reserve/result'})
         }
         // failed:
         else if(res.data.status === 210){
-          handleClose()
+          dispatch(setOpenModal(false))
           dispatch(setStep(0))
         }
       

@@ -51,7 +51,7 @@ const  SelectDays =()=>{
                         { values.days.map(day=>{
                         return <Box key={day.id}  mx={1} my={2} display='flex' justifyContent={'space-between'} alignItems='center'> 
                                  <Box>
-                                    <Typography width={'50px'}>{day.text}</Typography>
+                                    <Typography >{day.text}</Typography>
                                 </Box>
                                 <Box>
                                                 <input

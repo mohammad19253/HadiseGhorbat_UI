@@ -3,9 +3,9 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
   token: '',
   otp_id:'',
-  phoneNumber:'09396380293',
-  firstName:'mohammad',
-  lastName:'mirzaei',
+  phoneNumber:'',
+  firstName:'',
+  lastName:'',
   id:'',
 }
 

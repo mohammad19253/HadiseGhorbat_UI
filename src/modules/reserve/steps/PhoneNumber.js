@@ -25,7 +25,7 @@ const PhoneNumber = () => {
       if (!values.phoneNumber) {
         errors.phoneNumber = 'َشماره تلفن خود را وارد کنید';
       } else if (values.phoneNumber.length > 11 ) {
-        errors.phoneNumber = 'شمارتو مثل آدم وارد کن ';
+        errors.phoneNumber = 'شماره ی وارد شده درست نمیباشد ';
       }
       return errors;
     }}
