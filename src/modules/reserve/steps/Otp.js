@@ -80,7 +80,7 @@ import { BASE_URL } from '../../../constants/urls/urls';
      <>
     <Typography variant='h4'  my={1}> کد تایید برای شماره  {phoneNumber}  ارسال شد  </Typography>
     <Button sx={{m:0,p:0}}color="secondary" onClick={handleChangeNumber}>( تغییر شماره تلفن )</Button>
-    <Typography my={1}>لطفا کد تاییده ارسال شده را وارد کنید</Typography>
+    <Typography my={1}>لطفا کد تایید ارسال شده را وارد کنید</Typography>
     <CustomeTimer ref={timerRef} expiryTimestamp={time}/>
       <div dir='ltr'>
       <OtpInput
