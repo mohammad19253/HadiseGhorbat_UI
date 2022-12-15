@@ -1,9 +1,10 @@
 
 import React  from 'react'
 import Head from 'next/head'
-import { Grid, Box, Divider, } from '@mui/material'
-import styles from './index.module.scss'
+import { Grid, Box, Divider, Button, Typography} from '@mui/material'
 import { useSelector } from 'react-redux'
+import Link from 'next/link'
+import { Home } from '@mui/icons-material'
 const ResultReserve=()=>{
     const reserves = useSelector(state=>state.reserves)
     const { firstName,lastName, phoneNumber, token} = useSelector(state=>state.user)
@@ -63,6 +64,21 @@ const ResultReserve=()=>{
                 </Box>
             </Grid>
         </Grid>
+        <Box display={'flex'} alignItems='center' justifyContent={'center'}>
+        {[{
+            text:'صفحه ی اصلی',
+            link:'/',
+            icon:<Home/>
+         }].map(({link, text, icon, }) => (
+                    <Link key={text}  href={link} >
+                    <a>
+                      <Button sx={{ my:1, color: 'black', display: 'flex'}}>
+                        <Box mx={2}> {icon} </Box>
+                      </Button>
+                    </a>
+                   </Link>
+                ))}
+        </Box>
     </>
   )
 }

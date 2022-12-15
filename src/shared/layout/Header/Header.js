@@ -45,7 +45,7 @@ const Header = () => {
                   </a>
                  </Link  >
               ))}
-          <CustomDrawer mdViewList={DRAWER_MD_VIEW_LIST} xsViewList={DRAWER_XS_VIEW_LIST}/>
+          <CustomDrawer mdViewList={DRAWER_MD_VIEW_LIST} xsViewList={DRAWER_MD_VIEW_LIST}/>
           </Box>
           <Box sx={{  display: { xs: 'flex', md: 'none' } }}>
               <MenuIcon  onClick={toggleDrawer(true)}></MenuIcon>

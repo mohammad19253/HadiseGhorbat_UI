@@ -64,9 +64,7 @@ import { BASE_URL } from '../../../constants/urls/urls';
         }
       }).catch(err=>{
         console.log(err)
-        //for test we pass
-        dispatch(setStep(step+1))
-        setOtp({isSubmitting:false,digit:'',message:''}) 
+        setOtp({isSubmitting:false,digit:'',message:'سرور در حال بروز رسانی میباشد'}) 
       })
     
     }
